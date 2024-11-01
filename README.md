@@ -1,6 +1,6 @@
 # inject-1password-env-vars
 
-Very, very basic script - not even making this pip installable - to load secrets into your environment.
+Very, very basic script - not even making this pip installable - to load secrets from 1Password's cli tool into your environment.
 
 What it does:
 - gets env variables matching 1Password urls (`op://...`)
