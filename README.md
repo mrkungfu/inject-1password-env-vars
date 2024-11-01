@@ -2,13 +2,17 @@
 
 Very basic. Gets env variables matching 1Password urls (`op://...`), pulls the secrets/variables all at once and then provides the shell commands which can be executed directly by a shell script. Couple examples shell scripts for Windows below.
 
-Q&A
 
-Q: Why use this instead of `$ op run`?
+# Q&A
+
+## Why use this instead of `$ op run`?
 A: Simple, you don't have to deal with any oddities that crop up running in a subshell (lack of ansii colors, weird window resizing) as well as having access to those secrets across commands without having to type `op run` each time. It's the simple things that matter in life. :)
 
-Q: Might there be a better way?
+## Might there be a better way?
 A: Prolly! Let me know if so. :)
+
+
+# Examples
 
 Powershell:
 
