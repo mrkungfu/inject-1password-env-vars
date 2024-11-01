@@ -1,6 +1,13 @@
 # inject-1password-env-vars
 
-Very basic. Gets env variables matching 1Password urls (`op://...`), pulls the secrets/variables all at once and then provides the shell commands which can be executed directly by a shell script. Couple examples shell scripts for Windows below.
+Very, very basic script - not even making this pip installable - to load secrets into your environment.
+
+What it does:
+- gets env variables matching 1Password urls (`op://...`)
+- pulls the secrets/variables all at once to minimize requests via `op` cli
+- outputs the shell commands which can be executed directly by a shell script to replace op urls with secrets
+
+Couple examples shell scripts for Windows below.
 
 
 # Q&A
