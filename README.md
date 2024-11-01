@@ -32,20 +32,5 @@ As a .bat script (via a file):
 ```winbatch
 @echo off
 for /f "delims=" %%i in ('python "<path_to_script>\inject_secrets.py"') do (%%i)
-
-setlocal
-
-set "tmpFile=out.test.tmp"
-
-FOR /F "tokens=1,2 delims==" %%G IN ('SET ^| findstr "op://"') DO (
-    op read "%%H" > "%tmpFile%"
-    FOR /F %%A IN (%tmpFile%) DO (
-        echo Updating %%G
-        set %%G=%%A
-    )
-    if exist "%tmpFile%" del "%tmpFile%"
-)
-
-endlocal
 @echo on
 ```
